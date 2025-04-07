@@ -13,12 +13,12 @@ if response.status_code == 200:
     # Extraer los datos relevantes del JSON
     if data and len(data) > 1:
         indicadores = data[1]  # La segunda parte de la respuesta contiene los datos
-        print("Índice GINI de Argentina (2011-2020):")
+        # print("Índice GINI de Argentina (2011-2020):")
         # Ordenar los años de menor a mayor
         for record in sorted(indicadores, key=lambda x: int(x["date"]), reverse=False):
             year = record["date"]
-            value = record["value"]
-            print(f"Año {year}: {value if value else 'Dato no disponible'}")
+            value = record["value"] if record["value"] is not None else 0
+            print(f"{year} {value}")
     else:
         print("No se encontraron datos en la API.")
 else:
