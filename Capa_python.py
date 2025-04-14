@@ -21,3 +21,5 @@ if response.status_code == 200:
             print(f"{year} {value}")
     else:
         print("No se encontraron datos en la API.")
+else:
+    print(f"Error al consultar la API. Código de respuesta: {response.status_code}")
