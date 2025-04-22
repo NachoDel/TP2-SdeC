@@ -45,7 +45,7 @@ Ahora para verificar el movimiento del mismo compartiremos las capturas de panta
 
 **CAPTURA N°1:**
 
-![](Ejecucion_gdb/2_primeras_vistas registros.png)
+![](Ejecucion_gdb/2_primeras_vistas_registros.png)
 
 Vemos un **disassembly** de la función modificar\_indices\_asm en GDB. Este es el código en lenguaje ensamblador generado por el ensamblador en el archivo llamado gini.asm, donde podemos ver que las primeras instrucciones hacen lo siguiente:
 
