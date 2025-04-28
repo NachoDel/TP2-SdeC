@@ -27,6 +27,7 @@ En el [repositorio](https://github.com/NachoDel/TP2-SdeC) podemos observar:
 
 * **Makefile:** Se utilizó un Makefile para automatizar la compilación del proyecto, que incluye código en lenguaje C (`tp.c`) y ensamblador (`gini.asm`). Este archivo permite compilar ambos archivos fuente y generar el ejecutable final (`gini`) con una sola instrucción (`make`), asegurando una compilación ordenada y reproducible.
 
+## **Desarrollo**
 **Estructura del Proyecto**
 
 * Capa\_python.py: Recupera datos del índice GINI desde la API del Banco Mundial.
